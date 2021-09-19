@@ -1,0 +1,40 @@
+@import "../../constants/Variables.scss";
+
+.landing {
+  min-height: 640px;
+  height: 100vh;
+  color: aliceblue;
+  font-family: $font-family-landing;
+  @include landingContainer;
+
+  &__textContainer {
+    @include landingContainer;
+
+    h2 {
+      font-size: xxx-large;
+      text-align: $text-center;
+    };
+
+    h3 {
+      font-size: 40px;
+      text-align: $text-center;
+    };
+  }
+  &__buttonContainer {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+
+    a{
+      text-decoration: none;
+    }
+  }
+
+  &__button {
+    width: 220px;
+    height: 50px;
+    padding: 10px 15px;
+    font-family: $font-family-btn !important;
+    font-weight: 600 !important;
+  }
+}

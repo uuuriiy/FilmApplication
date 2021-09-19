@@ -1,0 +1,24 @@
+.reviews {
+  padding-top: 100px;
+  width: 80%;
+  margin: 0 auto;
+
+  &__container {
+    display: flex;
+  }
+
+  &__icon {
+    margin-right: 25px;
+    color: gray;
+  }
+
+  &__mainInfo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    h3 {
+      color: gray;
+    }
+  }
+}

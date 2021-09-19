@@ -1,0 +1,24 @@
+.filmSearchPage {
+  &__container {
+    padding: 150px 0;
+  }
+  &__formContainer {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+
+    input {
+      padding: 10px 30px 10px 15px;
+    }
+
+    button {
+      margin-left: 5px;
+    }
+  }
+
+  &__filmCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 10px;
+  }
+}

@@ -1,0 +1,63 @@
+@import "../../constants/Variables.scss";
+
+.aboutSiteInfo {
+  @include landingContainer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+
+  &__title {
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: .5px;
+    width: 100%;
+    text-align: $text-center;
+    color: #fff;
+    font-family: $font-family-about-site;
+    padding: 20px 0;
+  }
+
+  &__mainInfo {
+    @include landingContainer;
+    color: hsla(0,0%,100%,.7);
+  }
+
+  &__mainInfoHeader {
+    @include aboutSiteText;
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  &__mainInfoFooter {
+    @include aboutSiteText;
+    font-size: 17px;
+    font-weight: 300;
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+
+  &__button {
+    padding-bottom: 10px;
+
+    a {
+      text-decoration: $text-decoration-none;
+    }
+
+    button {
+      color: #ecf0f1 !important;
+      padding: 12px !important;
+    }
+  }
+
+  &__bg-helpful-img {
+    background-image: url("https://d0.tubitv.com/web/dist/6d56f796.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    height: 350px;
+    width: 100%;
+  }
+}

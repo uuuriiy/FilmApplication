@@ -1,0 +1,86 @@
+@import "../../constants/Variables.scss";
+
+.footer {
+  @include landingContainer;
+  margin-top: 20px;
+  background: #1A1E23;
+  color: white;
+
+  &__container {
+    width: 60%;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    padding-bottom: 25px;
+
+    h6 {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    a {
+      text-decoration: $text-decoration-none;
+      color: white;
+      &:hover {
+        color: #95a5a6;
+      }
+    }
+  }
+
+  &__lineOne {
+    margin: 0 5%;
+    hr {
+      color: white;
+    }
+  }
+
+  &__info {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 30px;
+    p {
+      text-align: $text-center;
+      line-height: 2rem;
+      font-family: $font-family-about-site;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__lineTwo {
+    margin: 3% 10% ;
+    hr {
+      color: white;
+    }
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+
+    a {
+      padding-left: 5px;
+      text-decoration: $text-decoration-none;
+      color: white;
+    }
+
+    a:hover {
+      color: #95a5a6;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: center;
+    button {
+      color: white !important;
+    }
+
+    button:hover {
+      color: #868686 !important;
+    }
+  }
+}

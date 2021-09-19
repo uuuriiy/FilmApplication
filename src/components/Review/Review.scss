@@ -1,0 +1,36 @@
+@import "../../constants/Variables.scss";
+
+.review {
+  display: flex;
+  flex-direction: column;
+
+  &__titleContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  &__titleImg {
+    height: 45px;
+    width: 45px;
+    margin-right: 5px;
+  }
+
+  &__titleUserInfo {
+    @include reviewsText;
+    font-weight: bold;
+  }
+
+  &__mainInfoContainer {
+    display: flex;
+  }
+
+  &__mainInfoTitle {
+    margin-right: 5px;
+    @include reviewsText;
+    font-weight: bold;
+  }
+
+  &__mainInfo {
+    @include reviewsText;
+  }
+}

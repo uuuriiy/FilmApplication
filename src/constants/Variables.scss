@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+$text-center: center;
+$text-decoration-none: none;
+
+$font-family-landing: 'Allison', cursive;
+$font-family-btn: 'Dosis', sans-serif;
+$font-family-signUpLink: Gotham Pro, Trebuchet MS, Helvetica, sans-serif;
+$font-family-about-site: 'Lato', sans-serif;
+
+$font_weight-bold: bold;
+
+$mt-10: 10px;
+
+@mixin landingContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin button {
+  margin-top: 20px !important;
+  padding: 10px !important;
+}
+
+@mixin aboutSiteText {
+  text-align: $text-center;
+  font-family: $font-family-about-site;
+  line-height: 24px;
+  letter-spacing: .5px;
+}
+
+@mixin register {
+  @include landingContainer;
+  min-height: 100vh;
+  background-color: whitesmoke;
+  &__card {
+    min-width: 275px;
+    padding: 30px;
+  }
+  &__cardHeader {
+    text-align: center;
+  }
+  &__form {
+    margin-top: 5px !important;
+  }
+  &__email {
+    margin-top: $mt-10 !important;
+  }
+  &__password {
+    margin-top: $mt-10 !important;
+  }
+  &__button {
+    @include button;
+  }
+  &__buttonRoute {
+    @include button;
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  }
+  &__signUpLink {
+    margin-top: $mt-10;
+    font-family: $font-family-signUpLink;
+    a {
+      text-decoration: $text-decoration-none;
+      color: #868686 !important;
+    }
+  }
+  &__error {
+    background-color: #ee7272;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 2px;
+  }
+}
+
+@mixin reviewsText {
+  color: gray;
+  font-family: $font-family-about-site;
+  font-size: 18px;
+  letter-spacing: 1px;
+}

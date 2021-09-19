@@ -1,0 +1,44 @@
+@import "../../constants/Variables.scss";
+
+@mixin text_options {
+  text-align: $text-center;
+  font-weight: $font_weight-bold;
+  font-family: $font-family-btn;
+}
+
+.jumbotronInfo {
+  &__container {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &__optionLineOne {
+    @include text_options;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 40px;
+  }
+
+  &__optionLineTwo {
+    @include text_options;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+
+    a {
+      text-decoration: $text-decoration-none;
+    }
+
+    button {
+      color: #ecf0f1 !important;
+      padding: 12px !important;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.filmCard {
+  width: 32%;
+  margin: 5px 10px;
+  cursor: pointer;
+
+  img {
+    height: 700px;
+  }
+
+  &__recommendations {
+    margin: 25px 10px;
+    cursor: pointer;
+    padding-bottom: 20px;
+    img {
+      height: 700px;
+    }
+  }
+
+  &__voteOptions {
+    display: flex;
+    padding-bottom: 5px;
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../constants/Variables.scss";
+
+.linkButton {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+
+  a {
+    text-decoration: $text-decoration-none;
+  }
+
+  button {
+    color: #ecf0f1 !important;
+    padding: 12px !important;
+  }
+}

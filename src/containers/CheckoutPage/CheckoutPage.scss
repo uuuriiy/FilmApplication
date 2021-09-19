@@ -1,0 +1,39 @@
+@import "../../constants/Variables.scss";
+
+.checkoutPage {
+  display: flex;
+  padding: 20px;
+  background-color: white;
+  height: max-content;
+
+  &__title {
+    margin-right: 10px;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+    font-family: $font-family-signUpLink;
+  }
+
+  &__container {
+    @include landingContainer;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 100px;
+    h2 {
+      font-family: $font-family-about-site;
+      letter-spacing: 1px;
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+    p {
+      font-family: $font-family-about-site;
+      font-size: 20px;
+      letter-spacing: 0.5px;
+      padding-top: 15px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}

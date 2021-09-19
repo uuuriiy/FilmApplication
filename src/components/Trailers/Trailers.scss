@@ -1,0 +1,16 @@
+.trailers {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__buttonContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    margin-bottom: 10px !important;
+  }
+}

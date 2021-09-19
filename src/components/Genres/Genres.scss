@@ -1,0 +1,17 @@
+@import "../../constants/Variables.scss";
+
+.genres {
+  display: flex;
+
+  &__nameContainer {
+    padding: 5px 0;
+  }
+
+  &__name {
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 600;
+    color: gray;
+    padding-right: 25px;
+  }
+}

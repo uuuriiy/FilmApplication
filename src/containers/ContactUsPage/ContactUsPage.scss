@@ -1,0 +1,47 @@
+@import "../../constants/Variables.scss";
+
+.contactUsPage {
+  &__container {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: $font-family-signUpLink;
+    letter-spacing: 1px;
+    height: 100vh;
+
+    h1 {
+      padding-bottom: 30px;
+      font-size: 50px;
+    }
+
+    h2 {
+      padding-bottom: 40px;
+      font-size: 40px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input {
+      padding: 10px 30px 10px 15px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px!important;
+      margin-top: 10px!important;
+    }
+  }
+
+  &__error {
+    background-color: #ee7272;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 2px;
+  }
+}

@@ -1,0 +1,17 @@
+.filmPagination {
+  &__container {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    span {
+      padding: 15px 18px !important;
+    }
+    a {
+      color: gray !important;
+      padding: 15px 18px !important;
+    }
+    a:hover {
+      color: gray;
+    }
+  }
+}

@@ -1,0 +1,105 @@
+@import "../../constants/Variables.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1A1E23;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  &__logo {
+    object-fit: contain;
+    height: 100px;
+    padding-left: 60px;
+    flex: 0.1;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: white;
+  }
+
+  &__link:hover {
+    color: white;
+  }
+
+  &__option {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+  }
+
+  &__optionLineOne {
+    font-size: 15px;
+    font-family: $font-family-signUpLink;
+  }
+
+  &__optionLineTwo {
+    font-size: 20px;
+    font-weight: 800;
+    font-family: $font-family-signUpLink;
+  }
+
+  &__optionBasket {
+    display: flex;
+    align-items: center;
+  }
+
+  &__basketCount {
+    font-size: 15px;
+    font-weight: 800;
+    font-family: $font-family-signUpLink;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+  }
+
+  &__optionContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex: 0.7;
+    list-style-type: none;
+    li{
+      padding-right: 20px;
+      a{
+        position: relative;
+        display: block;
+        padding: 4px 0;
+        font-family: Lato, sans-serif;
+        color: #ecf0f1;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.5s;
+
+        &::after {
+          position: absolute;
+          content: "";
+          top: 100%;
+          left: 0;
+          width: 100%;
+          height: 3px;
+          background: #3498db;
+          transform: scaleX(0);
+          transform-origin: right;
+          transition: transform 0.5s;
+        }
+
+        &:hover {
+          color: #95a5a6;
+        }
+
+        &:hover::after {
+          transform: scaleX(1);
+          transform-origin: left;
+        }
+      }
+    }
+  }
+}
