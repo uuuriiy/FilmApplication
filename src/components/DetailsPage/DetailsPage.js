@@ -14,7 +14,7 @@ import {NOT_FOUND} from "../../constants";
 export const DetailsPage = ({id, film, loading, list}) => {
     const history = useHistory();
     return (
-        <div>
+        <>
             <Header/>
             <Jumbotron/>
             <div>
@@ -33,6 +33,6 @@ export const DetailsPage = ({id, film, loading, list}) => {
                 )}
             </div>
             <Footer/>
-        </div>
+        </>
     );
 };

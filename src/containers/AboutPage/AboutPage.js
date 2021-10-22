@@ -13,7 +13,7 @@ import "./AboutPage.scss"
 const CN = "aboutPage"
 export const AboutPage = () => {
     return (
-        <div>
+        <>
             <Header/>
             <div className={CN} style={{backgroundImage: `url(${bgImg})`}}>
                 <h1>
@@ -43,6 +43,6 @@ export const AboutPage = () => {
                     </NavLink>
                 </div>
             </div>
-        </div>
+        </>
     );
 };

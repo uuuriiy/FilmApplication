@@ -12,9 +12,10 @@ import {FilmPagination} from "../../components/FilmPagination/FilmPagination";
 import {Header} from "../../components/Header/Header";
 import {Jumbotron} from "../../components/Jumbotron/Jumbotron";
 import {Loading} from "../../components/Loading/Loading";
+import {Footer} from "../../components/Footer/Footer";
 
 import "./FilmSearchPage.scss"
-import {Footer} from "../../components/Footer/Footer";
+
 
 
 const CN = "filmSearchPage"

@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .notFound {
   &__body {
     min-height: 450px;
@@ -47,18 +49,18 @@
     }
   }
 
-  &__layer:nth-child(n+#{round($NUM_LAYERS/2)}):after {
+  &__layer:nth-child(n+#{round(math.div($NUM-LAYERS, 2))}):after {
     -webkit-text-stroke: 3px hsla(0, 0%, 0%, .25);
   }
 
-  &__layer:nth-child(n+#{round($NUM_LAYERS/2 + 1)}):after {
+  &__layer:nth-child(n+#{round(math.div($NUM-LAYERS, 2) + 1)}):after {
     -webkit-text-stroke: 15px gray;
     text-shadow: 6px 0 6px darken(gray,35%),
     5px 5px 5px darken(gray,40%),
     0 6px 6px darken(gray,35%);
   }
 
-  &__layer:nth-child(n+#{round($NUM_LAYERS/2 + 2)}):after {
+  &__layer:nth-child(n+#{round(math.div($NUM-LAYERS, 2) + 2)}):after {
     -webkit-text-stroke: 15px darken(gray, 10%);
   }
 

@@ -4,22 +4,15 @@ import {Button, FormControl, TextField, Card, CardContent, Typography} from "@ma
 import {NavLink, useHistory} from 'react-router-dom'
 import {useForm} from 'react-hook-form'
 import {yupResolver} from '@hookform/resolvers/yup'
-import {useSelector} from "react-redux";
 
 import {signIn} from '../../firebase/firebase'
 import {HOME, PASSWORD_FORGET, SIGN_UP, signInValidationSchema} from "../../constants";
 import "./SignIn.scss"
 
 
-
 const CN = 'signIn'
 export const SignIn = () => {
     const history = useHistory();
-    const user = useSelector(state => {
-        console.log(state?.userCreate?.user);
-        return state.userCreate?.user
-    });
-    console.log(user);
     const {register, handleSubmit, formState: {errors}} = useForm({
         resolver: yupResolver(signInValidationSchema)
     })
@@ -32,6 +25,7 @@ export const SignIn = () => {
             console.log(e);
         }
     }
+
     return (
         <div className={CN}>
             <Card className={`${CN}__card`}>
@@ -61,7 +55,7 @@ export const SignIn = () => {
                                                 {
                                                     errors.email?.message
                                                 }
-                                            </span>
+                                        </span>
                                     )
                                 }
                                 <TextField

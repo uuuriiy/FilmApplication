@@ -8,12 +8,12 @@ import {Jumbotron} from "../../components/Jumbotron/Jumbotron";
 
 export const HomePage = ({match: {path}}) => {
     return (
-        <div>
+        <>
             <Header/>
             <Jumbotron path={path}/>
             <AboutSiteInfo/>
             <ControlledCarousel/>
             <Footer/>
-        </div>
+        </>
     );
 };

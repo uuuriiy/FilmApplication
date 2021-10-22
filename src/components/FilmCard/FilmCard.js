@@ -6,13 +6,13 @@ import {StarRate} from '@material-ui/icons';
 import "./FilmCard.scss"
 
 const CN = 'filmCard'
-export const FilmCard = ({id, film: { id: filmId, title, vote_average, overview, release_date, poster_path,}, onSelect}) => {
+export const FilmCard = ({id, film: {title, vote_average, overview, release_date, poster_path,}, onSelect}) => {
 
     const voteHandler = () => Number.isInteger(vote_average) ?
         vote_average : vote_average.toFixed(1)
 
     const onSelectHandler = () => {
-        onSelect && onSelect(filmId)
+        onSelect && onSelect(id)
     }
 
     return (

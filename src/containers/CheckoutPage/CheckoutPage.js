@@ -21,7 +21,7 @@ export const CheckoutPage = () => {
             <Jumbotron/>
             <div className={CN}>
                 {
-                    !!basket?.length ? (
+                    !!basket.length ? (
                         <div>
                             <h2 className={`${CN}__title`}>Your Film Basket</h2>
                             {
