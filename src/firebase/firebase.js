@@ -1,13 +1,13 @@
 import firebase from "firebase";
 
 const firebaseApp = firebase.initializeApp({
-    apiKey: "AIzaSyD3kPsfdAa4Q3h7CTAfN-xheFBOX08TuDY",
-    authDomain: "movieforelite-5a919.firebaseapp.com",
-    projectId: "movieforelite-5a919",
-    storageBucket: "movieforelite-5a919.appspot.com",
-    messagingSenderId: "391509957904",
-    appId: "1:391509957904:web:6e5396d66db83b38051995",
-    measurementId: "G-29MMDGL3BP"
+    apiKey: "AIzaSyBb1JCp6uvGj0YbUp-Rb69NEplUWAzkPSs",
+    authDomain: "movieforelite-ab395.firebaseapp.com",
+    projectId: "movieforelite-ab395",
+    storageBucket: "movieforelite-ab395.appspot.com",
+    messagingSenderId: "919492791792",
+    appId: "1:919492791792:web:7b2dd823e18512e997e135",
+    measurementId: "G-NQZ7R76J6T"
 });
 
 const auth = firebase.auth();
