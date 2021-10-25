@@ -1,10 +1,10 @@
 .filmCard {
-  width: 32%;
+  width: 31%;
   margin: 5px 10px;
   cursor: pointer;
 
   img {
-    height: 700px;
+    height: 600px;
   }
 
   &__recommendations {
@@ -12,7 +12,7 @@
     cursor: pointer;
     padding-bottom: 20px;
     img {
-      height: 700px;
+      height: 600px;
     }
   }
 

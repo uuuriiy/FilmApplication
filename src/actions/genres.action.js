@@ -1,6 +1,5 @@
 import {batch} from 'react-redux'
 import {
-    FETCH_GENRES,
     GET_GENRES,
     GET_GENRES_ERROR,
     LOADING_GENRES_END,
@@ -14,9 +13,6 @@ export const startLoading = () => ({type: LOADING_GENRES_START});
 export const endLoading = () => ({type: LOADING_GENRES_END});
 
 export const getGenres = () => {
-    // return {
-    //     type: FETCH_GENRES
-    // }
     const url = `https://api.themoviedb.org/3/genre/movie/list?api_key=${accessToken}`
     return (dispatch) => {
         dispatch(startLoading());

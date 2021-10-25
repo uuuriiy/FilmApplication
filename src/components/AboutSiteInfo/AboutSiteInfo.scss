@@ -7,7 +7,7 @@
   margin-bottom: 20px;
 
   &__title {
-    font-size: 27px;
+    font-size: 25px;
     font-weight: 700;
     line-height: 32px;
     letter-spacing: .5px;
@@ -25,7 +25,7 @@
 
   &__mainInfoHeader {
     @include aboutSiteText;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
     padding-top: 20px;
     padding-bottom: 10px;

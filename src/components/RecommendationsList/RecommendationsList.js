@@ -13,7 +13,6 @@ import {Loading} from "../Loading/Loading";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./RecommendationsList.scss"
-import queryString from "query-string";
 
 
 const CN = "recommendationsList"

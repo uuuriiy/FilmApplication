@@ -18,6 +18,7 @@
   &__titleUserInfo {
     @include reviewsText;
     font-weight: bold;
+    font-size: 17px;
   }
 
   &__mainInfoContainer {
@@ -32,5 +33,6 @@
 
   &__mainInfo {
     @include reviewsText;
+
   }
 }
