@@ -52,6 +52,9 @@ export const ContactUsPage = ({history}) => {
                 console.log(response);
                 console.log(response.data);
             })
+            .catch( (error) => {
+                console.log(error);
+            } )
     }
 
     const submitHandler = (e) => {
@@ -66,7 +69,6 @@ export const ContactUsPage = ({history}) => {
         onSubmit(e);
     }
 
-    console.log(error);
     return (
         <div className={CN}>
             <Header/>
